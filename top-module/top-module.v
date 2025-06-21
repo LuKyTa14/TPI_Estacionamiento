@@ -9,7 +9,7 @@ module top_estacionamiento(
     output wire [3:0] leds  // leds[3]=lleno, leds[2:0]=contador
 );
     // vi algo de los botones logica de antirebote
-    wire rts, A, B;
+    wire rst, A, B;
     assign rst = ~reset;
     assign A = ~btnA;
     assign B = ~btnB;
