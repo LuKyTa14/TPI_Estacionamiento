@@ -8,7 +8,7 @@ module top_estacionamiento(
     input wire btnB,        // Sensor B (botón físico)
     output wire [3:0] leds  // leds[3]=lleno, leds[2:0]=contador
 );
-    // vi algo de los botones logica de pegamiento
+    // vi algo de los botones logica de antirebote
     wire rts, A, B;
     assign rst = ~reset;
     assign A = ~btnA;
