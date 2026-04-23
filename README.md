@@ -8,7 +8,7 @@ Diseñar un contador de ocupación para 7(siete) vehículos máximo en el estaci
 
 ## 📁 Estructura del Repositorio
 
-El proyecto está dividido modularmente. Cada carpeta de hardware contiene su propio código fuente (`.v`), su banco de pruebas o *testbench* (`_tb.v`), y los archivos generados por las herramientas de simulación y síntesis (`.out`, `.vcd`, `apio.ini`):
+El proyecto está dividido modularmente. Cada carpeta de hardware contiene su propio código fuente (`.v`), su banco de pruebas o *testbench* (`_tb.v`), y los archivos generados por las herramientas de simulación y síntesis:
 
 * **`fsm-sensores/`**: Contiene la Máquina de Estados Finitos (`fsm-sensores.v`). Este módulo evalúa la secuencia de bloqueos y desbloqueos de los sensores a y b (por ejemplo: 00, 10, 11, 01, 00) para determinar la dirección del vehículo.
 * **`contador-estacionamiento/`**: Implementa el contador ascendente/descendente (`contador-estacionamiento.v`) que permite contabilizar la cantidad de autos estacionados, respetando el límite máximo.
